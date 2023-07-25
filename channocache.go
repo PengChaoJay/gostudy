@@ -11,11 +11,9 @@ import (
 
 // wg 用来等待程序结束
 var wg sync.WaitGroup
-
 func init() {
 	rand.Seed(time.Now().UnixNano())
 }
-
 // main 是所有 Go 程序的入口
 func main() {
 	// 创建一个无缓冲的通道
@@ -28,16 +26,13 @@ func main() {
 	go player("Djokovic", court)
 	// 发球
 	court <- 1
-
 	// 等待游戏结束
 	wg.Wait()
 }
-
 // player 模拟一个选手在打网球
 func player(name string, court chan int) {
 	// 在函数退出时调用 Done 来通知 main 函数工作已经完成
 	defer wg.Done()
-
 	for {
 		// 等待球被击打过来
 		ball, ok := <-court
@@ -46,7 +41,6 @@ func player(name string, court chan int) {
 			fmt.Printf("Player %s Won\n", name)
 			return
 		}
-
 		// 选随机数，然后用这个数来判断我们是否丢球
 		n := rand.Intn(100)
 		if n % 13 == 0 {
@@ -55,11 +49,9 @@ func player(name string, court chan int) {
 			close(court)
 			return
 		}
-
 		// 显示击球数，并将击球数加 1
 		fmt.Printf("Player %s Hit %d\n", name, ball)
 		ball++
-
 		// 将球打向对手
 		court <- ball
 	}
