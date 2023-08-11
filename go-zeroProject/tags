@@ -1,0 +1,37 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.9~svn20110310	//
+Config	zero-index/internal/config/config.go	/^type Config struct {$/;"	t
+Handle	zero-index/internal/middleware/loginMiddleware.go	/^func (m *LoginMiddleware) Handle(next http.HandlerFunc) http.HandlerFunc {$/;"	f
+LoginMiddleware	zero-index/internal/middleware/loginMiddleware.go	/^type LoginMiddleware struct {$/;"	t
+NewLoginMiddleware	zero-index/internal/middleware/loginMiddleware.go	/^func NewLoginMiddleware() *LoginMiddleware {$/;"	f
+NewOrderInfoLogic	zero-index/internal/logic/orderInfoLogic.go	/^func NewOrderInfoLogic(ctx context.Context, svcCtx *svc.ServiceContext) *OrderInfoLogic {$/;"	f
+NewOrderUpdateLogic	zero-index/internal/logic/orderUpdateLogic.go	/^func NewOrderUpdateLogic(ctx context.Context, svcCtx *svc.ServiceContext) *OrderUpdateLogic {$/;"	f
+NewServiceContext	zero-index/internal/svc/serviceContext.go	/^func NewServiceContext(c config.Config) *ServiceContext {$/;"	f
+OrderInfo	zero-index/internal/logic/orderInfoLogic.go	/^func (l *OrderInfoLogic) OrderInfo(req *types.OrderInfoReq) (resp *types.OrderInfoResp, err error) {$/;"	f
+OrderInfoLogic	zero-index/internal/logic/orderInfoLogic.go	/^type OrderInfoLogic struct {$/;"	t
+OrderInfoReq	zero-index/internal/types/types.go	/^type OrderInfoReq struct {$/;"	t
+OrderInfoResp	zero-index/internal/types/types.go	/^type OrderInfoResp struct {$/;"	t
+OrderUpdate	zero-index/internal/logic/orderUpdateLogic.go	/^func (l *OrderUpdateLogic) OrderUpdate(req *types.OrderInfoReq) (resp *types.OrderInfoResp, err error) {$/;"	f
+OrderUpdateLogic	zero-index/internal/logic/orderUpdateLogic.go	/^type OrderUpdateLogic struct {$/;"	t
+RegisterHandlers	zero-index/internal/handler/routes.go	/^func RegisterHandlers(server *rest.Server, serverCtx *svc.ServiceContext) {$/;"	f
+ServiceContext	zero-index/internal/svc/serviceContext.go	/^type ServiceContext struct {$/;"	t
+config	zero-index/internal/config/config.go	/^package config$/;"	p
+configFile	zero-index/order.go	/^var configFile = flag.String("f", "etc\/order-api.yaml", "the config file")$/;"	v
+handler	zero-index/internal/handler/orderInfoHandler.go	/^package handler$/;"	p
+handler	zero-index/internal/handler/orderUpdateHandler.go	/^package handler$/;"	p
+handler	zero-index/internal/handler/routes.go	/^package handler$/;"	p
+logic	zero-index/internal/logic/orderInfoLogic.go	/^package logic$/;"	p
+logic	zero-index/internal/logic/orderUpdateLogic.go	/^package logic$/;"	p
+main	zero-index/order.go	/^func main() {$/;"	f
+main	zero-index/order.go	/^package main$/;"	p
+middleware	zero-index/internal/middleware/loginMiddleware.go	/^package middleware$/;"	p
+orderInfoHandler	zero-index/internal/handler/orderInfoHandler.go	/^func orderInfoHandler(svcCtx *svc.ServiceContext) http.HandlerFunc {$/;"	f
+orderUpdateHandler	zero-index/internal/handler/orderUpdateHandler.go	/^func orderUpdateHandler(svcCtx *svc.ServiceContext) http.HandlerFunc {$/;"	f
+req	zero-index/internal/handler/orderInfoHandler.go	/^		var req types.OrderInfoReq$/;"	v
+req	zero-index/internal/handler/orderUpdateHandler.go	/^		var req types.OrderInfoReq$/;"	v
+svc	zero-index/internal/svc/serviceContext.go	/^package svc$/;"	p
+types	zero-index/internal/types/types.go	/^package types$/;"	p
