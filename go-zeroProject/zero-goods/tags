@@ -1,0 +1,72 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.9~svn20110310	//
+Config	internal/config/config.go	/^type Config struct {$/;"	t
+Descriptor	types/goods/goods.pb.go	/^func (*GoodsRequest) Descriptor() ([]byte, []int) {$/;"	f
+Descriptor	types/goods/goods.pb.go	/^func (*GoodsResponse) Descriptor() ([]byte, []int) {$/;"	f
+File_goods_proto	types/goods/goods.pb.go	/^var File_goods_proto protoreflect.FileDescriptor$/;"	v
+GetGoods	goodsclient/goods.go	/^func (m *defaultGoods) GetGoods(ctx context.Context, in *GoodsRequest, opts ...grpc.CallOption) (*GoodsResponse, error) {$/;"	f
+GetGoods	internal/logic/getgoodslogic.go	/^func (l *GetGoodsLogic) GetGoods(in *goods.GoodsRequest) (*goods.GoodsResponse, error) {$/;"	f
+GetGoods	internal/server/goodsserver.go	/^func (s *GoodsServer) GetGoods(ctx context.Context, in *goods.GoodsRequest) (*goods.GoodsResponse, error) {$/;"	f
+GetGoods	types/goods/goods_grpc.pb.go	/^func (UnimplementedGoodsServer) GetGoods(context.Context, *GoodsRequest) (*GoodsResponse, error) {$/;"	f
+GetGoods	types/goods/goods_grpc.pb.go	/^func (c *goodsClient) GetGoods(ctx context.Context, in *GoodsRequest, opts ...grpc.CallOption) (*GoodsResponse, error) {$/;"	f
+GetGoodsId	types/goods/goods.pb.go	/^func (x *GoodsRequest) GetGoodsId() int64 {$/;"	f
+GetGoodsId	types/goods/goods.pb.go	/^func (x *GoodsResponse) GetGoodsId() int64 {$/;"	f
+GetGoodsLogic	internal/logic/getgoodslogic.go	/^type GetGoodsLogic struct {$/;"	t
+GetName	types/goods/goods.pb.go	/^func (x *GoodsResponse) GetName() string {$/;"	f
+Goods	goodsclient/goods.go	/^	Goods interface {$/;"	t
+GoodsClient	types/goods/goods_grpc.pb.go	/^type GoodsClient interface {$/;"	t
+GoodsRequest	goodsclient/goods.go	/^	GoodsRequest  = goods.GoodsRequest$/;"	t
+GoodsRequest	types/goods/goods.pb.go	/^type GoodsRequest struct {$/;"	t
+GoodsResponse	goodsclient/goods.go	/^	GoodsResponse = goods.GoodsResponse$/;"	t
+GoodsResponse	types/goods/goods.pb.go	/^type GoodsResponse struct {$/;"	t
+GoodsServer	internal/server/goodsserver.go	/^type GoodsServer struct {$/;"	t
+GoodsServer	types/goods/goods_grpc.pb.go	/^type GoodsServer interface {$/;"	t
+Goods_GetGoods_FullMethodName	types/goods/goods_grpc.pb.go	/^	Goods_GetGoods_FullMethodName = "\/goods.Goods\/getGoods"$/;"	c
+Goods_ServiceDesc	types/goods/goods_grpc.pb.go	/^var Goods_ServiceDesc = grpc.ServiceDesc{$/;"	v
+NewGetGoodsLogic	internal/logic/getgoodslogic.go	/^func NewGetGoodsLogic(ctx context.Context, svcCtx *svc.ServiceContext) *GetGoodsLogic {$/;"	f
+NewGoods	goodsclient/goods.go	/^func NewGoods(cli zrpc.Client) Goods {$/;"	f
+NewGoodsClient	types/goods/goods_grpc.pb.go	/^func NewGoodsClient(cc grpc.ClientConnInterface) GoodsClient {$/;"	f
+NewGoodsServer	internal/server/goodsserver.go	/^func NewGoodsServer(svcCtx *svc.ServiceContext) *GoodsServer {$/;"	f
+NewServiceContext	internal/svc/servicecontext.go	/^func NewServiceContext(c config.Config) *ServiceContext {$/;"	f
+ProtoMessage	types/goods/goods.pb.go	/^func (*GoodsRequest) ProtoMessage() {}$/;"	f
+ProtoMessage	types/goods/goods.pb.go	/^func (*GoodsResponse) ProtoMessage() {}$/;"	f
+ProtoReflect	types/goods/goods.pb.go	/^func (x *GoodsRequest) ProtoReflect() protoreflect.Message {$/;"	f
+ProtoReflect	types/goods/goods.pb.go	/^func (x *GoodsResponse) ProtoReflect() protoreflect.Message {$/;"	f
+RegisterGoodsServer	types/goods/goods_grpc.pb.go	/^func RegisterGoodsServer(s grpc.ServiceRegistrar, srv GoodsServer) {$/;"	f
+Reset	types/goods/goods.pb.go	/^func (x *GoodsRequest) Reset() {$/;"	f
+Reset	types/goods/goods.pb.go	/^func (x *GoodsResponse) Reset() {$/;"	f
+ServiceContext	internal/svc/servicecontext.go	/^type ServiceContext struct {$/;"	t
+String	types/goods/goods.pb.go	/^func (x *GoodsRequest) String() string {$/;"	f
+String	types/goods/goods.pb.go	/^func (x *GoodsResponse) String() string {$/;"	f
+UnimplementedGoodsServer	types/goods/goods_grpc.pb.go	/^type UnimplementedGoodsServer struct {$/;"	t
+UnsafeGoodsServer	types/goods/goods_grpc.pb.go	/^type UnsafeGoodsServer interface {$/;"	t
+_	types/goods/goods.pb.go	/^	_ = protoimpl.EnforceVersion(20 - protoimpl.MinVersion)$/;"	c
+_	types/goods/goods.pb.go	/^	_ = protoimpl.EnforceVersion(protoimpl.MaxVersion - 20)$/;"	c
+_	types/goods/goods_grpc.pb.go	/^const _ = grpc.SupportPackageIsVersion7$/;"	c
+_Goods_GetGoods_Handler	types/goods/goods_grpc.pb.go	/^func _Goods_GetGoods_Handler(srv interface{}, ctx context.Context, dec func(interface{}) error, interceptor grpc.UnaryServerInterceptor) (interface{}, error) {$/;"	f
+config	internal/config/config.go	/^package config$/;"	p
+configFile	goods.go	/^var configFile = flag.String("f", "etc\/goods.yaml", "the config file")$/;"	v
+defaultGoods	goodsclient/goods.go	/^	defaultGoods struct {$/;"	t
+file_goods_proto_depIdxs	types/goods/goods.pb.go	/^var file_goods_proto_depIdxs = []int32{$/;"	v
+file_goods_proto_goTypes	types/goods/goods.pb.go	/^var file_goods_proto_goTypes = []interface{}{$/;"	v
+file_goods_proto_init	types/goods/goods.pb.go	/^func file_goods_proto_init() {$/;"	f
+file_goods_proto_msgTypes	types/goods/goods.pb.go	/^var file_goods_proto_msgTypes = make([]protoimpl.MessageInfo, 2)$/;"	v
+file_goods_proto_rawDesc	types/goods/goods.pb.go	/^var file_goods_proto_rawDesc = []byte{$/;"	v
+file_goods_proto_rawDescData	types/goods/goods.pb.go	/^	file_goods_proto_rawDescData = file_goods_proto_rawDesc$/;"	v
+file_goods_proto_rawDescGZIP	types/goods/goods.pb.go	/^func file_goods_proto_rawDescGZIP() []byte {$/;"	f
+file_goods_proto_rawDescOnce	types/goods/goods.pb.go	/^	file_goods_proto_rawDescOnce sync.Once$/;"	v
+goods	types/goods/goods.pb.go	/^package goods$/;"	p
+goods	types/goods/goods_grpc.pb.go	/^package goods$/;"	p
+goodsClient	types/goods/goods_grpc.pb.go	/^type goodsClient struct {$/;"	t
+goodsclient	goodsclient/goods.go	/^package goodsclient$/;"	p
+init	types/goods/goods.pb.go	/^func init() { file_goods_proto_init() }$/;"	f
+logic	internal/logic/getgoodslogic.go	/^package logic$/;"	p
+main	goods.go	/^func main() {$/;"	f
+main	goods.go	/^package main$/;"	p
+mustEmbedUnimplementedGoodsServer	types/goods/goods_grpc.pb.go	/^func (UnimplementedGoodsServer) mustEmbedUnimplementedGoodsServer() {}$/;"	f
+server	internal/server/goodsserver.go	/^package server$/;"	p
+svc	internal/svc/servicecontext.go	/^package svc$/;"	p
